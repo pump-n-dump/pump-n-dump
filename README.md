@@ -6,3 +6,12 @@ This is the official repo for the pump and dump software created in the Miami Bi
 This will be a feature filled and stable version. Not made with no sleep and held together by hope.
 
 ![](https://raw.githubusercontent.com/ThePixelBro22/Pump-N-Dump/master/public/icon.png)
+
+
+To start the app 
+
+`npm start`
+
+then
+
+`npm run electron`

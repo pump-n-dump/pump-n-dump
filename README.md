@@ -1,4 +1,4 @@
-#Pump-N-Dump
+# Pump-N-Dump
 
 
 This is the official repo for the pump and dump software created in the Miami Bitcoin Hackathon.

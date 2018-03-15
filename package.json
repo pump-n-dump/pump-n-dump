@@ -1,5 +1,8 @@
 {
   "name": "pump-n-dump",
+  "description": "An app to pump-n-dump your alt coins into BTC",
+  "author": "Pump-N-Dump Team",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,7 +17,9 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "electron": "electron .",
-    "electron-dev": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && electron .\""
+    "electron-dev": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-pack": "electron-builder build",
+    "electron-dist": "electron-builder"
   },
   "devDependencies": {
     "concurrently": "^3.5.1",

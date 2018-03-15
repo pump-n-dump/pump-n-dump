@@ -8,10 +8,7 @@ This will be a feature filled and stable version. Not made with no sleep and hel
 ![](https://raw.githubusercontent.com/ThePixelBro22/Pump-N-Dump/master/public/icon.png)
 
 
-To start the app 
+# Starting the app 
+```yarn``` for first time setup
 
-`npm start`
-
-then
-
-`npm run electron`
+```yarn electron-dev``` for development launch

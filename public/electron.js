@@ -55,3 +55,17 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
+
+
+/////////////////////////
+// Pump Dump API
+////////////////////////
+var apiData = {}//store api data here
+const {ipcMain} = require('electron');//allow server&client to talk
+//////////////////////////////
+//On Client Ping
+ipcMain.on('testPing', (event, keys) => {
+  //when finished ping client back client
+  console.log(keys)
+  event.sender.send('testPong', 'Hello From Server!');
+});

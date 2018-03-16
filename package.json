@@ -10,7 +10,7 @@
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1"
   },
-  "main": "src/electron-starter.js",
+  "main": "public/electron.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

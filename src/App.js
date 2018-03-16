@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+//Example Communication With Electron
+if(window.ipc){
+  //ipcRenderer.send('testPing', 'hello from client');
+  window.ipc.send('testPing', 'hello from client');
+  window.ipc.on("testPong", (event, data) => {
+    alert(data);
+    console.log(data);
+  });
+}
+
 class App extends Component {
   render() {
     return (

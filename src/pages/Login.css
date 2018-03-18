@@ -1,0 +1,39 @@
+#login-container{
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    max-width: 600px;
+    padding: 10px 30px 30px 30px;
+    background-color: #EBEFF2; 
+    border-radius: 1%;
+    background: #465A65;
+    text-align: center;
+}
+
+#logo{
+    display: block;
+    margin: auto;
+    margin-bottom: 7px;
+}
+
+#login-button{
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "BN-titling", Fallback, sans-serif;
+    font-size: 40px;
+    background-color: #333947;
+    color: white;
+    border-style: solid;
+    border-color: white;
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 0px 0px 1px 0px;
+}
+
+.apiKeys{
+    font-size: 40px;
+    font-family: "BN-titling", Fallback, sans-serif;
+}
+
+

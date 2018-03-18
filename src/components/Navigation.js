@@ -1,19 +1,18 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import logo from '../media/logo.png'
+import './Navigation.css'
 
 //Pings Server (Hello World Example)
-class Ping extends React.Component {
+class Navigation extends React.Component {
   state = {
     response: ''
   };
 
   render() {
     return(
-      <div>
-        <p>I Ping Server</p>
-        <Link to={"/login"}><p>Link To Home</p></Link>
-      </div>
+      <img id='nav-logo' src={logo}/>
     );
   }
 }
-export default Ping;
+export default Navigation;

@@ -8,6 +8,7 @@ import './index.css';
 //Assigns URL routes
 ReactDOM.render(
   <BrowserRouter>
+  {/*Replaces compnents based on URL*/}
     <Switch>
       <Route path="/api/ping" component={Ping} />
       <Route path="*" component={Home} />

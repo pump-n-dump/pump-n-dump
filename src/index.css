@@ -2,4 +2,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #EBEFF2;
+  background-image: url(media/background.png);
+  -webkit-animation: animatedBackground 15s linear infinite;
+  animation: animatedBackground 15s linear infinite;
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0 }
+	to { background-position: 293px 338px; }
 }

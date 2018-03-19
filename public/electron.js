@@ -13,7 +13,12 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({
+    width: 935, 
+    height: 600,
+    minWidth: 935,
+    minHeight: 200
+  });
 
   // and load the index.html of the app.
   mainWindow.loadURL('http://localhost:3000');//DEVELOPMENT\\
@@ -55,7 +60,6 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
-
 
 /////////////////////////
 // Pump Dump API

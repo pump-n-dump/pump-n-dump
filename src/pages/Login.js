@@ -5,12 +5,12 @@ import logo from '../media/logo.png'
 import helpIcon from '../media/help-icon.png'
 import '../animate.css'
 
-//Example Communication With Electron
-if(window.ipc){
-
-}
-
 class Login extends React.Component {
+  //send server api keys
+  login(){
+    window.ipc.send('login', 'Da Public Jewels', 'Da Private Jewels');
+  }  
+
   render() {
     return (
       <div>
@@ -21,7 +21,7 @@ class Login extends React.Component {
             <img id='login-help-button' draggable="false" src={helpIcon} />
             <input id="public-key" className="apiKeys" type="text" placeholder="Public Key"/><br/>
             <input id="secret-key" className="apiKeys" type="text" placeholder="Secret Key"/><br/>
-            <Link to={"/api/ping/"}><button id="login-button">Login</button><br/></Link>
+            <button id="login-button" onClick={this.login}>Login</button>
         </div>
       </div>
     );

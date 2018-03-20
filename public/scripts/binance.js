@@ -10,3 +10,9 @@ function login(key, secret){
       })
       console.log("ayy you in boi");
 }
+
+
+
+
+
+module.exports.login = login;

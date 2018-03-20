@@ -8,7 +8,7 @@ import '../animate.css'
 class Login extends React.Component {
   //send server api keys
   login(){
-    window.ipc.send('login', 'Da Public Jewels', 'Da Private Jewels');
+    window.ipc.send('login', {publicKey: 'Da Public Jewels', privateKey: 'Da Private Jewels'});
   }  
 
   render() {

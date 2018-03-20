@@ -73,3 +73,9 @@ ipcMain.on('testPing', (event, keys) => {
   console.log(keys)
   event.sender.send('testPong', 'Hello From Server!');
 });
+//////////////////////////////
+//On Client Login
+ipcMain.on('login', (event, keys) => {
+  //log client api keys
+  console.log(keys)
+});

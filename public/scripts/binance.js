@@ -1,6 +1,6 @@
 const binance = require('node-binance-api')
 
-function init(key, secret){
+function login(key, secret){
 
     binance.options({
         APIKEY: key,

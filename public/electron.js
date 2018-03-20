@@ -3,6 +3,8 @@ const electron = require('electron')
 const app = electron.app
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
+// Import Binance scripts
+const pnd = require('./scripts/binance')
 
 const path = require('path')
 const url = require('url')
@@ -77,5 +79,5 @@ ipcMain.on('testPing', (event, keys) => {
 //On Client Login
 ipcMain.on('login', (event, keys) => {
   //log client api keys
-  console.log(keys)
+  pnd.login(keys.publicKey, keys.privateKey)
 });

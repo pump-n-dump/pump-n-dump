@@ -7,8 +7,8 @@ import '../animate.css'
 
 class Login extends React.Component {
   //send server api keys
-  login(){
-    window.ipc.send('login', {publicKey: 'Da Public Jewels', privateKey: 'Da Private Jewels'});
+  login(pub, priv){
+    window.ipc.send('login', {publicKey: "6LudtPSDfTPOZt4tVgQ0LXens9vUCu4e6aHR1JrTFWX0kX9nmsSD5kthtLtzlsRy", privateKey: "PAjTE84QaMTdXacdhJtKvLAiH0Qkr1MR3Q8inwgQdo3VNKDRoeXoHUuR8ZIT4om6"});
   }  
 
   render() {
